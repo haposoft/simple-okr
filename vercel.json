@@ -7,10 +7,7 @@
     }
   ],
   "env": {
-    "NEXTAUTH_URL": {
-      "development": "http://localhost:3000",
-      "production": "https://simple-okr.vercel.app"
-    },
+    "NEXTAUTH_URL": "https://simple-okr.vercel.app",
     "NEXTAUTH_SECRET": "abcdefghijklmnopqrstuvwxyz1234567890"
   }
 } 
