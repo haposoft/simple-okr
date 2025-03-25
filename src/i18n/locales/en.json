@@ -1,14 +1,14 @@
 {
   "home": {
-    "title": "HAPO SIMPLE OKR",
-    "description": "A simple and effective way to manage your objectives and key results",
+    "title": "OKR Management System",
+    "description": "Effectively manage Objectives and Key Results (OKR) from company level to individual level.",
     "features": {
-      "objectives": "Objectives",
-      "objectivesDesc": "Set and track your objectives and key results",
-      "departments": "Departments",
-      "departmentsDesc": "Manage your organization's departments and teams",
-      "reports": "Reports",
-      "reportsDesc": "Generate detailed reports and analytics"
+      "objectives": "Company Objectives",
+      "objectivesDesc": "Set up and track strategic objectives at the company level.",
+      "departments": "Department Objectives",
+      "departmentsDesc": "Manage and link objectives between departments.",
+      "reports": "Individual Objectives",
+      "reportsDesc": "Track and update individual objective progress."
     }
   },
   "common": {
@@ -31,7 +31,8 @@
     "loginWithGoogle": "Login with Google",
     "loginRequired": "Please login to continue",
     "signInTitle": "Sign in to OKR System",
-    "signInWithGoogle": "Sign in with Google"
+    "signInWithGoogle": "Sign in with Google",
+    "startNow": "Start now"
   },
   "navigation": {
     "home": "Home",

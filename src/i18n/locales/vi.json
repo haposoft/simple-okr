@@ -1,14 +1,14 @@
 {
   "home": {
-    "title": "HAPO SIMPLE OKR",
-    "description": "Cách đơn giản và hiệu quả để quản lý mục tiêu và kết quả then chốt",
+    "title": "Hệ thống Quản lý OKR",
+    "description": "Quản lý mục tiêu và kết quả then chốt (OKR) từ cấp công ty đến cấp cá nhân một cách hiệu quả.",
     "features": {
-      "objectives": "Mục tiêu",
-      "objectivesDesc": "Thiết lập và theo dõi mục tiêu và kết quả then chốt của bạn",
-      "departments": "Phòng ban",
-      "departmentsDesc": "Quản lý các phòng ban và nhóm trong tổ chức của bạn",
-      "reports": "Báo cáo",
-      "reportsDesc": "Tạo báo cáo và phân tích chi tiết"
+      "objectives": "Mục tiêu Công ty",
+      "objectivesDesc": "Thiết lập và theo dõi các mục tiêu chiến lược cấp công ty.",
+      "departments": "Mục tiêu Phòng ban",
+      "departmentsDesc": "Quản lý và liên kết các mục tiêu giữa các phòng ban.",
+      "reports": "Mục tiêu Cá nhân",
+      "reportsDesc": "Theo dõi và cập nhật tiến độ mục tiêu cá nhân."
     }
   },
   "common": {
@@ -31,7 +31,8 @@
     "loginWithGoogle": "Đăng nhập bằng Google",
     "loginRequired": "Vui lòng đăng nhập để tiếp tục",
     "signInTitle": "Đăng nhập vào hệ thống OKR",
-    "signInWithGoogle": "Đăng nhập với Google"
+    "signInWithGoogle": "Đăng nhập với Google",
+    "startNow": "Bắt đầu ngay"
   },
   "navigation": {
     "home": "Trang chủ",

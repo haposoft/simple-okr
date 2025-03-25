@@ -1,14 +1,14 @@
 {
   "home": {
-    "title": "HAPO SIMPLE OKR",
-    "description": "Eine einfache und effektive Möglichkeit, Ihre Ziele und wichtigsten Ergebnisse zu verwalten",
+    "title": "OKR-Managementsystem",
+    "description": "Effektives Management von Zielen und Schlüsselergebnissen (OKR) von der Unternehmensebene bis zur individuellen Ebene.",
     "features": {
-      "objectives": "Ziele",
-      "objectivesDesc": "Setzen und verfolgen Sie Ihre Ziele und wichtigsten Ergebnisse",
-      "departments": "Abteilungen",
-      "departmentsDesc": "Verwalten Sie die Abteilungen und Teams Ihrer Organisation",
-      "reports": "Berichte",
-      "reportsDesc": "Erstellen Sie detaillierte Berichte und Analysen"
+      "objectives": "Unternehmensziele",
+      "objectivesDesc": "Strategische Ziele auf Unternehmensebene einrichten und verfolgen.",
+      "departments": "Abteilungsziele",
+      "departmentsDesc": "Ziele zwischen Abteilungen verwalten und verknüpfen.",
+      "reports": "Individuelle Ziele",
+      "reportsDesc": "Fortschritte bei individuellen Zielen verfolgen und aktualisieren."
     }
   },
   "common": {
@@ -31,7 +31,8 @@
     "loginWithGoogle": "Mit Google anmelden",
     "loginRequired": "Bitte melden Sie sich an, um fortzufahren",
     "signInTitle": "Anmeldung zum OKR-System",
-    "signInWithGoogle": "Mit Google anmelden"
+    "signInWithGoogle": "Mit Google anmelden",
+    "startNow": "Jetzt starten"
   },
   "navigation": {
     "home": "Startseite",

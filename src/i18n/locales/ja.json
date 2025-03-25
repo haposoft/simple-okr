@@ -1,14 +1,14 @@
 {
   "home": {
-    "title": "HAPO SIMPLE OKR",
-    "description": "目標と主要な結果を管理するためのシンプルで効果的な方法",
+    "title": "OKR管理システム",
+    "description": "会社レベルから個人レベルまで、目標と主要結果（OKR）を効果的に管理します。",
     "features": {
-      "objectives": "目標",
-      "objectivesDesc": "目標と主要な結果を設定し、追跡する",
-      "departments": "部署",
-      "departmentsDesc": "組織の部署とチームを管理する",
-      "reports": "レポート",
-      "reportsDesc": "詳細なレポートと分析を生成する"
+      "objectives": "会社の目標",
+      "objectivesDesc": "会社レベルの戦略的目標を設定し、追跡します。",
+      "departments": "部署の目標",
+      "departmentsDesc": "部署間の目標を管理し、連携させます。",
+      "reports": "個人の目標",
+      "reportsDesc": "個人の目標の進捗状況を追跡し、更新します。"
     }
   },
   "common": {
@@ -31,7 +31,8 @@
     "loginWithGoogle": "Googleでログイン",
     "loginRequired": "続行するにはログインしてください",
     "signInTitle": "OKRシステムにログイン",
-    "signInWithGoogle": "Googleでログイン"
+    "signInWithGoogle": "Googleでログイン",
+    "startNow": "今すぐ始める"
   },
   "navigation": {
     "home": "ホーム",
