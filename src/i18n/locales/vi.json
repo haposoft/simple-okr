@@ -29,7 +29,9 @@
     "email": "Email",
     "password": "Mật khẩu",
     "loginWithGoogle": "Đăng nhập bằng Google",
-    "loginRequired": "Vui lòng đăng nhập để tiếp tục"
+    "loginRequired": "Vui lòng đăng nhập để tiếp tục",
+    "signInTitle": "Đăng nhập vào hệ thống OKR",
+    "signInWithGoogle": "Đăng nhập với Google"
   },
   "navigation": {
     "home": "Trang chủ",

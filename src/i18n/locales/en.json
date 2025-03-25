@@ -29,7 +29,9 @@
     "email": "Email",
     "password": "Password",
     "loginWithGoogle": "Login with Google",
-    "loginRequired": "Please login to continue"
+    "loginRequired": "Please login to continue",
+    "signInTitle": "Sign in to OKR System",
+    "signInWithGoogle": "Sign in with Google"
   },
   "navigation": {
     "home": "Home",

@@ -29,7 +29,9 @@
     "email": "メールアドレス",
     "password": "パスワード",
     "loginWithGoogle": "Googleでログイン",
-    "loginRequired": "続行するにはログインしてください"
+    "loginRequired": "続行するにはログインしてください",
+    "signInTitle": "OKRシステムにログイン",
+    "signInWithGoogle": "Googleでログイン"
   },
   "navigation": {
     "home": "ホーム",

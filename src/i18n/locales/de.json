@@ -29,7 +29,9 @@
     "email": "E-Mail",
     "password": "Passwort",
     "loginWithGoogle": "Mit Google anmelden",
-    "loginRequired": "Bitte melden Sie sich an, um fortzufahren"
+    "loginRequired": "Bitte melden Sie sich an, um fortzufahren",
+    "signInTitle": "Anmeldung zum OKR-System",
+    "signInWithGoogle": "Mit Google anmelden"
   },
   "navigation": {
     "home": "Startseite",
