@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXTAUTH_URL": {
+      "development": "http://localhost:3000",
+      "production": "https://simple-okr.vercel.app"
+    },
+    "NEXTAUTH_SECRET": "abcdefghijklmnopqrstuvwxyz1234567890"
+  }
+} 
