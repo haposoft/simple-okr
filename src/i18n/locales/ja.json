@@ -1,0 +1,131 @@
+{
+  "home": {
+    "title": "HAPO SIMPLE OKR",
+    "description": "目標と主要な結果を管理するためのシンプルで効果的な方法",
+    "features": {
+      "objectives": "目標",
+      "objectivesDesc": "目標と主要な結果を設定し、追跡する",
+      "departments": "部署",
+      "departmentsDesc": "組織の部署とチームを管理する",
+      "reports": "レポート",
+      "reportsDesc": "詳細なレポートと分析を生成する"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "create": "作成",
+    "search": "検索",
+    "filter": "フィルター"
+  },
+  "auth": {
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "loginWithGoogle": "Googleでログイン",
+    "loginRequired": "続行するにはログインしてください"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "objectives": "目標",
+    "departments": "部署",
+    "reports": "レポート",
+    "settings": "設定"
+  },
+  "objectives": {
+    "title": "目標",
+    "createNew": "新しい目標を作成",
+    "editObjective": "目標を編集",
+    "deleteObjective": "目標を削除",
+    "objectiveDetails": "目標の詳細",
+    "form": {
+      "title": "タイトル",
+      "description": "説明",
+      "department": "部署",
+      "status": "ステータス",
+      "startDate": "開始日",
+      "endDate": "終了日",
+      "type": "タイプ",
+      "priority": "優先度"
+    },
+    "status": {
+      "active": "進行中",
+      "completed": "完了",
+      "cancelled": "キャンセル"
+    },
+    "type": {
+      "company": "会社",
+      "department": "部署",
+      "individual": "個人"
+    },
+    "priority": {
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "name": "名前",
+    "progress": "進捗"
+  },
+  "departments": {
+    "title": "部署",
+    "createNew": "新しい部署を作成",
+    "editDepartment": "部署を編集",
+    "deleteDepartment": "部署を削除",
+    "departmentDetails": "部署の詳細",
+    "form": {
+      "name": "名前",
+      "description": "説明",
+      "manager": "マネージャー"
+    },
+    "name": "名前",
+    "description": "説明"
+  },
+  "reports": {
+    "title": "レポート & 統計",
+    "createNew": "新しいレポートを作成",
+    "timeRange": {
+      "month": "月",
+      "quarter": "四半期",
+      "year": "年"
+    },
+    "summary": {
+      "totalObjectives": "総目標数",
+      "activeObjectives": "進行中の目標",
+      "completedObjectives": "完了した目標"
+    },
+    "departmentProgress": "部署別進捗",
+    "monthlyProgress": "月別進捗",
+    "form": {
+      "title": "タイトル",
+      "description": "説明",
+      "type": "レポートタイプ",
+      "department": "部署",
+      "startDate": "開始日",
+      "endDate": "終了日"
+    },
+    "type": {
+      "performance": "パフォーマンス",
+      "progress": "進捗",
+      "summary": "概要"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "theme": "テーマ",
+    "notifications": "通知",
+    "profile": "プロフィール"
+  },
+  "nav": {
+    "home": "ホーム",
+    "objectives": "目標",
+    "departments": "部署",
+    "reports": "レポート"
+  }
+} 

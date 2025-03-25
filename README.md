@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OKR Management System
 
-## Getting Started
+A web application for managing OKR (Objectives and Key Results) built with Next.js, allowing management of objectives from company level to individual level.
 
-First, run the development server:
+## Features
 
+- Login with Google account
+- Manage objectives and key results
+- Hierarchy of objectives from company to department and individual
+- Track and update progress of objectives
+- User-friendly interface with Tailwind CSS
+
+## System Requirements
+
+- Node.js 18.x or higher
+- PostgreSQL
+- Google Cloud Platform account (for Google login)
+
+## Installation
+
+1. Clone repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd simple-okr
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create .env file and configure environment variables:
+```env
+DATABASE_URL="postgresql://user:password@localhost:5432/okr_db"
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your-nextauth-secret"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Create database and run migrations:
+```bash
+npx prisma migrate dev
+```
 
-## Learn More
+5. Start the application:
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Google OAuth Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Access [Google Cloud Console](https://console.cloud.google.com)
+2. Create a new project
+3. Enable Google OAuth API
+4. Create credentials (OAuth 2.0 Client ID)
+5. Add authorized redirect URI: `http://localhost:3000/api/auth/callback/google`
+6. Copy Client ID and Client Secret to .env file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+src/
+  ├── app/
+  │   ├── api/           # API endpoints
+  │   ├── components/    # React components
+  │   ├── objectives/    # Objectives management page
+  │   └── departments/   # Departments management page
+  ├── prisma/           # Database schema and migrations
+  └── styles/           # Global styles
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Access `http://localhost:3000`
+2. Login with Google account
+3. Create a new department
+4. Create objectives for company, department, or individual
+5. Track and update progress of objectives
+
+## Contribution
+
+All contributions are welcome! Please create an issue or pull request to contribute to the project.
+
+## License
+
+MIT

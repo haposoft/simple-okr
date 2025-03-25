@@ -1,0 +1,131 @@
+{
+  "home": {
+    "title": "HAPO SIMPLE OKR",
+    "description": "Eine einfache und effektive Möglichkeit, Ihre Ziele und wichtigsten Ergebnisse zu verwalten",
+    "features": {
+      "objectives": "Ziele",
+      "objectivesDesc": "Setzen und verfolgen Sie Ihre Ziele und wichtigsten Ergebnisse",
+      "departments": "Abteilungen",
+      "departmentsDesc": "Verwalten Sie die Abteilungen und Teams Ihrer Organisation",
+      "reports": "Berichte",
+      "reportsDesc": "Erstellen Sie detaillierte Berichte und Analysen"
+    }
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "search": "Suchen",
+    "filter": "Filter"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "loginWithGoogle": "Mit Google anmelden",
+    "loginRequired": "Bitte melden Sie sich an, um fortzufahren"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "objectives": "Ziele",
+    "departments": "Abteilungen",
+    "reports": "Berichte",
+    "settings": "Einstellungen"
+  },
+  "objectives": {
+    "title": "Ziele",
+    "createNew": "Neues Ziel erstellen",
+    "editObjective": "Ziel bearbeiten",
+    "deleteObjective": "Ziel löschen",
+    "objectiveDetails": "Zieldetails",
+    "form": {
+      "title": "Titel",
+      "description": "Beschreibung",
+      "department": "Abteilung",
+      "status": "Status",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "type": "Typ",
+      "priority": "Priorität"
+    },
+    "status": {
+      "active": "Aktiv",
+      "completed": "Abgeschlossen",
+      "cancelled": "Abgebrochen"
+    },
+    "type": {
+      "company": "Unternehmen",
+      "department": "Abteilung",
+      "individual": "Individuell"
+    },
+    "priority": {
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    },
+    "name": "Name",
+    "progress": "Fortschritt"
+  },
+  "departments": {
+    "title": "Abteilungen",
+    "createNew": "Neue Abteilung erstellen",
+    "editDepartment": "Abteilung bearbeiten",
+    "deleteDepartment": "Abteilung löschen",
+    "departmentDetails": "Abteilungsdetails",
+    "form": {
+      "name": "Name",
+      "description": "Beschreibung",
+      "manager": "Manager"
+    },
+    "name": "Name",
+    "description": "Beschreibung"
+  },
+  "reports": {
+    "title": "Berichte & Statistiken",
+    "createNew": "Neuen Bericht erstellen",
+    "timeRange": {
+      "month": "Monat",
+      "quarter": "Quartal",
+      "year": "Jahr"
+    },
+    "summary": {
+      "totalObjectives": "Gesamtziele",
+      "activeObjectives": "Aktive Ziele",
+      "completedObjectives": "Abgeschlossene Ziele"
+    },
+    "departmentProgress": "Abteilungsfortschritt",
+    "monthlyProgress": "Monatlicher Fortschritt",
+    "form": {
+      "title": "Titel",
+      "description": "Beschreibung",
+      "type": "Berichtstyp",
+      "department": "Abteilung",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum"
+    },
+    "type": {
+      "performance": "Leistung",
+      "progress": "Fortschritt",
+      "summary": "Zusammenfassung"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "theme": "Design",
+    "notifications": "Benachrichtigungen",
+    "profile": "Profil"
+  },
+  "nav": {
+    "home": "Startseite",
+    "objectives": "Ziele",
+    "departments": "Abteilungen",
+    "reports": "Berichte"
+  }
+} 

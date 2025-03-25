@@ -1,0 +1,134 @@
+{
+  "home": {
+    "title": "HAPO SIMPLE OKR",
+    "description": "A simple and effective way to manage your objectives and key results",
+    "features": {
+      "objectives": "Objectives",
+      "objectivesDesc": "Set and track your objectives and key results",
+      "departments": "Departments",
+      "departmentsDesc": "Manage your organization's departments and teams",
+      "reports": "Reports",
+      "reportsDesc": "Generate detailed reports and analytics"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "loginWithGoogle": "Login with Google",
+    "loginRequired": "Please login to continue"
+  },
+  "navigation": {
+    "home": "Home",
+    "objectives": "Objectives",
+    "departments": "Departments",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "objectives": {
+    "title": "Objectives",
+    "createNew": "Create New Objective",
+    "editObjective": "Edit Objective",
+    "deleteObjective": "Delete Objective",
+    "objectiveDetails": "Objective Details",
+    "form": {
+      "title": "Title",
+      "description": "Description",
+      "department": "Department",
+      "status": "Status",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "type": "Type",
+      "priority": "Priority"
+    },
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "type": {
+      "company": "Company",
+      "department": "Department",
+      "individual": "Individual"
+    },
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "name": "Name",
+    "progress": "Progress"
+  },
+  "departments": {
+    "title": "Departments",
+    "createNew": "Create New Department",
+    "editDepartment": "Edit Department",
+    "deleteDepartment": "Delete Department",
+    "departmentDetails": "Department Details",
+    "form": {
+      "name": "Name",
+      "description": "Description",
+      "manager": "Manager"
+    },
+    "name": "Name",
+    "description": "Description"
+  },
+  "reports": {
+    "title": "Reports & Statistics",
+    "createNew": "Create New Report",
+    "timeRange": {
+      "month": "Month",
+      "quarter": "Quarter",
+      "year": "Year"
+    },
+    "summary": {
+      "totalObjectives": "Total Objectives",
+      "activeObjectives": "Active Objectives",
+      "completedObjectives": "Completed Objectives"
+    },
+    "departmentProgress": "Department Progress",
+    "monthlyProgress": "Monthly Progress",
+    "form": {
+      "title": "Title",
+      "description": "Description",
+      "type": "Report Type",
+      "department": "Department",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "type": {
+      "performance": "Performance",
+      "progress": "Progress",
+      "summary": "Summary"
+    },
+    "totalObjectives": "Total Objectives",
+    "activeObjectives": "Active Objectives",
+    "completedObjectives": "Completed Objectives"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "profile": "Profile"
+  },
+  "nav": {
+    "home": "Home",
+    "objectives": "Objectives",
+    "departments": "Departments",
+    "reports": "Reports"
+  }
+} 
