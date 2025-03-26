@@ -14,6 +14,21 @@ This document contains user stories for the Simple OKR system, organized by func
 - **security/**: User stories related to security and privacy
 - **future/**: User stories for future enhancements
 
+## User Stories
+
+| Module | User Story | Priority | Story Points | Link |
+|--------|------------|----------|--------------|------|
+| Authentication | Google Account Login | High | 5 | [View](authentication/google-login.md) |
+| Authentication | Session Management | High | 3 | [View](authentication/session-management.md) |
+| Objectives | Create New Objective | High | 5 | [View](objectives/create-objective.md) |
+| Departments | Create New Department | High | 3 | [View](departments/create-department.md) |
+| Users | Assign User to Department | High | 5 | [View](users/assign-department.md) |
+| Reports | View Statistics and Reports | Medium | 8 | [View](reports/view-statistics.md) |
+| Multilingual | Language Switching | High | 5 | [View](multilingual/language-switch.md) |
+| UI | Responsive Interface Design | Medium | 8 | [View](ui/responsive-design.md) |
+| Security | Access Control and Permissions | High | 8 | [View](security/access-control.md) |
+| Future | Export Reports as PDF or Excel | Low | 5 | [View](future/export-reports.md) |
+
 ## Agile Scrum Model
 
 Each user story is described according to the Agile Scrum model including:
