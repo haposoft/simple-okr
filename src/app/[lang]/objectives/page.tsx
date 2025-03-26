@@ -141,24 +141,23 @@ function ObjectivesContent() {
         return;
       }
       
-      // In a real application, this would be an API call:
-      // const response = await fetch('/api/objectives', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(newObjective),
-      // });
-      // const data = await response.json();
+      const response = await fetch('/api/objectives', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newObjective),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message || 'Failed to create objective');
+      }
+
+      const createdObjective = await response.json();
       
-      // For demonstration purposes, we'll simulate adding to the objectives array
-      const newId = (objectives.length + 1).toString();
-      const createdObjective: Objective = {
-        id: newId,
-        ...newObjective
-      };
-      
-      setObjectives([...objectives, createdObjective]);
+      // Update local state with the newly created objective
+      setObjectives(prevObjectives => [...prevObjectives, createdObjective]);
       
       // Reset form and close
       setNewObjective({
@@ -173,7 +172,7 @@ function ObjectivesContent() {
       setShowAddForm(false);
     } catch (error) {
       console.error('Error creating objective:', error);
-      setFormError('Failed to create objective. Please try again.');
+      setFormError(error instanceof Error ? error.message : 'Failed to create objective. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
