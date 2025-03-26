@@ -9,8 +9,8 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model Account {
@@ -41,16 +41,29 @@ model Session {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  accounts      Account[]
-  sessions      Session[]
-  objectives    Objective[]
-  department    Department? @relation(fields: [departmentId], references: [id])
-  departmentId  String?
+  id             String           @id @default(cuid())
+  name           String?
+  email          String?          @unique
+  emailVerified  DateTime?
+  image          String?
+  role           String?          @default("USER") // USER, ADMIN, MANAGER
+  accounts       Account[]
+  sessions       Session[]
+  objectives     Objective[]
+  departments    UserDepartment[]
+}
+
+// Bảng quan hệ many-to-many giữa User và Department
+model UserDepartment {
+  id           String     @id @default(cuid())
+  userId       String
+  departmentId String
+  isPrimary    Boolean    @default(false) // Đánh dấu phòng ban chính
+  role         String?    @default("MEMBER") // MEMBER, MANAGER, LEADER
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, departmentId])
 }
 
 model VerificationToken {
@@ -62,13 +75,13 @@ model VerificationToken {
 }
 
 model Department {
-  id          String     @id @default(cuid())
+  id          String           @id @default(cuid())
   name        String
   description String?
   parentId    String?
-  parent      Department?  @relation("DepartmentHierarchy", fields: [parentId], references: [id])
-  children    Department[] @relation("DepartmentHierarchy")
-  users       User[]
+  parent      Department?      @relation("DepartmentHierarchy", fields: [parentId], references: [id])
+  children    Department[]     @relation("DepartmentHierarchy")
+  users       UserDepartment[]
   objectives  Objective[]
 }
 

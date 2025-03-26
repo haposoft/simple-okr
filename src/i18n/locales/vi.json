@@ -18,10 +18,23 @@
     "cancel": "Hủy",
     "save": "Lưu",
     "delete": "Xóa",
-    "edit": "Sửa",
-    "create": "Tạo mới",
+    "edit": "Chỉnh sửa",
+    "create": "Tạo",
     "search": "Tìm kiếm",
-    "filter": "Lọc"
+    "filter": "Lọc",
+    "appName": "HAPO SIMPLE OKR",
+    "welcome": "Chào mừng bạn đến với hệ thống OKR",
+    "language": "Ngôn ngữ",
+    "dashboard": "Bảng điều khiển",
+    "objectives": "Mục tiêu",
+    "departments": "Phòng ban",
+    "users": "Người dùng",
+    "reports": "Báo cáo & Thống kê",
+    "settings": "Cài đặt",
+    "account": "Tài khoản",
+    "profile": "Hồ sơ",
+    "logout": "Đăng xuất",
+    "add": "Thêm"
   },
   "auth": {
     "login": "Đăng nhập",
@@ -32,7 +45,18 @@
     "loginRequired": "Vui lòng đăng nhập để tiếp tục",
     "signInTitle": "Đăng nhập vào hệ thống OKR",
     "signInWithGoogle": "Đăng nhập với Google",
-    "startNow": "Bắt đầu ngay"
+    "startNow": "Bắt đầu ngay",
+    "signin": "Đăng nhập",
+    "signinWithGoogle": "Đăng nhập với Google",
+    "signinWithGithub": "Đăng nhập với Github",
+    "loginWithCredentials": "Đăng nhập với tài khoản",
+    "signupQuestion": "Bạn chưa có tài khoản?",
+    "signupAction": "Đăng ký ngay",
+    "signinQuestion": "Đã có tài khoản?",
+    "signinAction": "Đăng nhập",
+    "forgotPassword": "Quên mật khẩu?",
+    "resetPassword": "Đặt lại mật khẩu",
+    "loginRequired": "Bạn cần đăng nhập để xem nội dung này"
   },
   "navigation": {
     "home": "Trang chủ",
@@ -42,11 +66,44 @@
     "settings": "Cài đặt"
   },
   "objectives": {
-    "title": "Mục tiêu",
+    "title": "Quản lý Mục tiêu",
+    "addNew": "Thêm Mục tiêu Mới",
+    "searchPlaceholder": "Tìm kiếm mục tiêu...",
+    "filterAllTypes": "Tất cả loại",
+    "typeCompany": "Công ty",
+    "typeDepartment": "Phòng ban",
+    "typePersonal": "Cá nhân",
+    "filterAllStatuses": "Tất cả trạng thái",
+    "statusDraft": "Nháp",
+    "statusActive": "Đang thực hiện",
+    "statusCompleted": "Hoàn thành",
+    "addFormTitle": "Thêm Mục tiêu Mới",
+    "formTitle": "Tiêu đề",
+    "formDescription": "Mô tả",
+    "formType": "Loại",
+    "formStatus": "Trạng thái",
+    "formStartDate": "Ngày bắt đầu",
+    "formEndDate": "Ngày kết thúc",
+    "formDepartment": "Phòng ban",
+    "selectDepartment": "Chọn phòng ban",
+    "noDepartment": "Không có phòng ban",
+    "unknownDepartment": "Phòng ban không xác định",
     "createNew": "Tạo mục tiêu mới",
     "editObjective": "Chỉnh sửa mục tiêu",
     "deleteObjective": "Xóa mục tiêu",
     "objectiveDetails": "Chi tiết mục tiêu",
+    "noObjectives": "Không tìm thấy mục tiêu nào",
+    "updateProgress": "Cập nhật tiến độ",
+    "keyResults": "Kết quả then chốt",
+    "notFound": "Không tìm thấy mục tiêu",
+    "back": "Quay lại danh sách mục tiêu",
+    "addKeyResult": "Thêm kết quả then chốt",
+    "editKeyResult": "Chỉnh sửa kết quả then chốt",
+    "confirmDeleteKR": "Bạn có chắc chắn muốn xóa kết quả then chốt này không?",
+    "noKeyResults": "Chưa có kết quả then chốt nào",
+    "target": "Mục tiêu",
+    "current": "Hiện tại",
+    "unit": "Đơn vị",
     "form": {
       "title": "Tiêu đề",
       "description": "Mô tả",
@@ -77,38 +134,75 @@
   },
   "departments": {
     "title": "Phòng ban",
-    "createNew": "Tạo phòng ban mới",
+    "addNew": "Thêm phòng ban mới",
     "editDepartment": "Chỉnh sửa phòng ban",
     "deleteDepartment": "Xóa phòng ban",
     "departmentDetails": "Chi tiết phòng ban",
+    "noDepartments": "Không tìm thấy phòng ban nào",
+    "parent": "Phòng ban cha",
+    "noParent": "Không có",
+    "parentDepartment": "Phòng ban cha",
     "form": {
       "name": "Tên",
       "description": "Mô tả",
-      "manager": "Quản lý"
+      "manager": "Quản lý",
+      "parent": "Phòng ban cha"
     },
-    "name": "Tên",
-    "description": "Mô tả"
+    "name": "Tên phòng ban",
+    "description": "Mô tả",
+    "manager": "Người quản lý",
+    "members": "Thành viên",
+    "subDepartments": "Phòng ban trực thuộc",
+    "back": "Quay lại danh sách phòng ban",
+    "notFound": "Không tìm thấy phòng ban",
+    "objectives": "Mục tiêu phòng ban",
+    "noObjectives": "Phòng ban này chưa có mục tiêu nào",
+    "addMember": "Thêm thành viên",
+    "noMembers": "Phòng ban này chưa có thành viên nào",
+    "form": {
+      "title": "Thông tin phòng ban",
+      "name": "Tên phòng ban",
+      "namePlaceholder": "Nhập tên phòng ban",
+      "description": "Mô tả",
+      "descriptionPlaceholder": "Nhập mô tả về phòng ban",
+      "manager": "Người quản lý",
+      "managerPlaceholder": "Chọn người quản lý",
+      "parent": "Phòng ban cấp trên",
+      "parentPlaceholder": "Chọn phòng ban cấp trên"
+    },
+    "confirmDelete": "Bạn có chắc chắn muốn xóa phòng ban này không?"
   },
   "reports": {
     "title": "Báo cáo & Thống kê",
     "createNew": "Tạo báo cáo mới",
+    "noReports": "Không tìm thấy báo cáo nào",
+    "allDepartments": "Tất cả phòng ban",
     "timeRange": {
       "month": "Tháng",
       "quarter": "Quý",
-      "year": "Năm"
+      "year": "Năm",
+      "title": "Khoảng thời gian",
+      "thisMonth": "Tháng này",
+      "thisQuarter": "Quý này",
+      "thisYear": "Năm nay"
     },
     "summary": {
       "totalObjectives": "Tổng số mục tiêu",
       "activeObjectives": "Mục tiêu đang hoạt động",
-      "completedObjectives": "Mục tiêu đã hoàn thành"
+      "completedObjectives": "Mục tiêu đã hoàn thành",
+      "title": "Tóm tắt"
     },
     "departmentProgress": "Tiến độ theo phòng ban",
     "monthlyProgress": "Tiến độ theo tháng",
     "form": {
       "title": "Tiêu đề",
+      "titlePlaceholder": "Nhập tiêu đề báo cáo",
       "description": "Mô tả",
+      "descriptionPlaceholder": "Mô tả nội dung báo cáo",
       "type": "Loại báo cáo",
+      "typePlaceholder": "Chọn loại báo cáo",
       "department": "Phòng ban",
+      "departmentPlaceholder": "Chọn phòng ban",
       "startDate": "Ngày bắt đầu",
       "endDate": "Ngày kết thúc"
     },
@@ -116,7 +210,10 @@
       "performance": "Hiệu suất",
       "progress": "Tiến độ",
       "summary": "Tổng quan"
-    }
+    },
+    "totalObjectives": "Tổng số mục tiêu",
+    "activeObjectives": "Mục tiêu đang hoạt động",
+    "completedObjectives": "Mục tiêu đã hoàn thành"
   },
   "settings": {
     "title": "Cài đặt",
@@ -129,6 +226,96 @@
     "home": "Trang chủ",
     "objectives": "Mục tiêu",
     "departments": "Phòng ban",
-    "reports": "Báo cáo"
+    "reports": "Báo cáo",
+    "users": "Người dùng"
+  },
+  "profile": {
+    "title": "Hồ sơ cá nhân",
+    "personalInfo": "Thông tin cá nhân",
+    "email": "Email",
+    "name": "Tên",
+    "role": "Vai trò",
+    "noSession": "Vui lòng đăng nhập để xem hồ sơ của bạn"
+  },
+  "users": {
+    "title": "Quản lý Người dùng",
+    "addNew": "Thêm Người dùng Mới",
+    "noUsers": "Không tìm thấy người dùng nào",
+    "searchPlaceholder": "Tìm kiếm người dùng...",
+    "name": "Tên",
+    "email": "Email",
+    "role": "Vai trò",
+    "departments": "Phòng ban",
+    "actions": "Hành động",
+    "filter": "Lọc",
+    "filterAllRoles": "Tất cả vai trò",
+    "filterAllDepartments": "Tất cả phòng ban",
+    "assignToDepartment": "Gán vào Phòng ban",
+    "removeDepartment": "Xóa khỏi Phòng ban",
+    "confirmRemove": "Bạn có chắc chắn muốn xóa người dùng này khỏi phòng ban không?",
+    "noDepartments": "Chưa được gán phòng ban nào",
+    "addDepartment": "Thêm Phòng ban",
+    "currentUser": "Bạn",
+    "roles": {
+      "USER": "Người dùng",
+      "ADMIN": "Quản trị viên",
+      "MANAGER": "Quản lý"
+    },
+    "departmentRoles": {
+      "MEMBER": "Thành viên",
+      "LEADER": "Trưởng nhóm",
+      "MANAGER": "Quản lý"
+    },
+    "form": {
+      "name": "Tên",
+      "email": "Email",
+      "role": "Vai trò Hệ thống",
+      "department": "Phòng ban",
+      "departmentRole": "Vai trò trong Phòng ban",
+      "isPrimary": "Phòng ban Chính"
+    },
+    "primaryDepartment": "Chính",
+    "makePrimary": "Đặt làm Chính",
+    "edit": "Sửa người dùng",
+    "delete": "Xóa người dùng",
+    "filterByDepartment": "Lọc theo phòng ban",
+    "filterByRole": "Lọc theo vai trò",
+    "allDepartments": "Tất cả phòng ban",
+    "allRoles": "Tất cả vai trò",
+    "admin": "Quản trị viên",
+    "manager": "Quản lý",
+    "user": "Người dùng",
+    "addToDepartment": "Thêm vào phòng ban",
+    "removeDepartment": "Xóa khỏi phòng ban",
+    "makePrimary": "Đặt làm chính",
+    "departmentRoles": {
+      "MANAGER": "Quản lý",
+      "LEAD": "Trưởng nhóm",
+      "MEMBER": "Thành viên"
+    },
+    "form": {
+      "title": "Thông tin người dùng",
+      "name": "Họ tên",
+      "namePlaceholder": "Nhập họ tên",
+      "email": "Email",
+      "emailPlaceholder": "Nhập địa chỉ email",
+      "role": "Vai trò",
+      "rolePlaceholder": "Chọn vai trò",
+      "department": "Phòng ban",
+      "departmentPlaceholder": "Chọn phòng ban"
+    }
+  },
+  "homepage": {
+    "title": "Chào mừng đến với hệ thống OKR đơn giản",
+    "description": "Quản lý mục tiêu và kết quả của bạn một cách dễ dàng",
+    "getStarted": "Bắt đầu ngay",
+    "learnMore": "Tìm hiểu thêm"
+  },
+  "dashboard": {
+    "overview": "Tổng quan",
+    "myObjectives": "Mục tiêu của tôi",
+    "teamObjectives": "Mục tiêu đội nhóm",
+    "recentUpdates": "Cập nhật gần đây",
+    "upcomingDeadlines": "Mục tiêu sắp đến hạn"
   }
 } 

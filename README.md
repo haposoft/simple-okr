@@ -1,19 +1,24 @@
-# OKR Management System
+# HAPO SIMPLE OKR
 
-A web application for managing OKR (Objectives and Key Results) built with Next.js, allowing management of objectives from company level to individual level.
+A comprehensive OKR (Objectives and Key Results) management system built with Next.js 15, providing a multi-language interface for managing objectives from company level to individual level.
 
 ## Features
 
-- Login with Google account
-- Manage objectives and key results
-- Hierarchy of objectives from company to department and individual
-- Track and update progress of objectives
-- User-friendly interface with Tailwind CSS
+- Multi-language support (English, Vietnamese, German, Japanese)
+- Authentication using NextAuth with Google login
+- User profile management
+- Objectives management with different types (company, department, personal)
+- Department hierarchy management with parent-child relationships
+- Reports and statistics for tracking OKR progress
+- User management with department assignments and primary department designation
+- Role-based access control (Admin, Manager, User)
+- Responsive design with Tailwind CSS
+- Department-specific roles (Member, Leader, Manager)
 
 ## System Requirements
 
 - Node.js 18.x or higher
-- PostgreSQL
+- PostgreSQL (optional, currently using mock data)
 - Google Cloud Platform account (for Google login)
 
 ## Installation
@@ -38,12 +43,7 @@ NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="your-nextauth-secret"
 ```
 
-4. Create database and run migrations:
-```bash
-npx prisma migrate dev
-```
-
-5. Start the application:
+4. Start the application:
 ```bash
 npm run dev
 ```
@@ -61,22 +61,96 @@ npm run dev
 
 ```
 src/
-  ├── app/
-  │   ├── api/           # API endpoints
-  │   ├── components/    # React components
-  │   ├── objectives/    # Objectives management page
-  │   └── departments/   # Departments management page
-  ├── prisma/           # Database schema and migrations
-  └── styles/           # Global styles
+  ├── app/                 # App directory (Next.js App Router)
+  │   ├── [lang]/          # Language-specific routes
+  │   │   ├── page.tsx     # Homepage
+  │   │   ├── objectives/  # Objectives management
+  │   │   ├── departments/ # Departments management
+  │   │   ├── reports/     # Reports and statistics
+  │   │   ├── users/       # User management
+  │   │   └── profile/     # User profile
+  │   └── api/             # API routes
+  │       ├── auth/        # Authentication endpoints
+  │       ├── objectives/  # Objectives endpoints
+  │       ├── departments/ # Departments endpoints
+  │       ├── reports/     # Reports endpoints
+  │       ├── users/       # Users endpoints
+  │       └── user-departments/ # User-department relationship endpoints
+  ├── components/          # Shared components
+  │   ├── Header.tsx       # Navigation header
+  │   ├── LanguageSelector.tsx # Language selection
+  │   └── ...
+  ├── i18n/                # Internationalization
+  │   ├── config.ts        # i18n configuration
+  │   └── locales/         # Language files
+  │       ├── en.json      # English
+  │       ├── vi.json      # Vietnamese
+  │       ├── de.json      # German
+  │       └── ja.json      # Japanese
+  ├── hooks/               # Custom React hooks
+  │   ├── useLanguage.ts   # Language management hook
+  │   └── ...
+  └── lib/                 # Utility functions
+      ├── dictionary.ts    # Dictionary loader for i18n
+      └── ...
 ```
 
 ## Usage
 
-1. Access `http://localhost:3000`
+1. Access `http://localhost:3000` (will redirect to `http://localhost:3000/en` for English)
 2. Login with Google account
-3. Create a new department
-4. Create objectives for company, department, or individual
-5. Track and update progress of objectives
+3. Navigate to various sections:
+   - **Objectives**: Create and manage objectives and key results
+   - **Departments**: Manage department hierarchy
+   - **Reports**: View statistics and reports
+   - **Users**: Manage users and their department assignments
+   - **Profile**: View and manage your profile
+
+## Features in Detail
+
+### Multi-language Support
+The application supports multiple languages with dedicated routes using the format `/{lang}/...` for all pages. You can switch between languages using the language selector in the header. Currently supported languages are:
+- English (en)
+- Vietnamese (vi)
+- German (de)
+- Japanese (ja)
+
+### User Profile
+View your personal information and profile picture in the Profile section accessible from the user menu in the header.
+
+### Objectives Management
+Create, view, edit, and delete objectives. Track progress with key results and filter objectives by type, status, and priority. Objectives can be company-wide, department-specific, or personal.
+
+### Department Management
+Create and manage department hierarchies with parent-child relationships. Each department can have a description and assigned users with specific roles within the department.
+
+### Reports and Statistics
+View performance metrics including:
+- Total objectives count
+- Active objectives count
+- Completed objectives count
+- Progress charts by department
+- Monthly progress tracking
+- Time range filtering (month, quarter, year)
+
+### User Management
+Manage users with the following features:
+- View all users in the system
+- Assign users to departments with specific roles (Member, Leader, Manager)
+- Designate a primary department for each user
+- Filter users by role and department
+- Search for users by name or email
+- Current user highlighting
+
+## API Endpoints
+
+The system provides the following API endpoints:
+
+- `/api/objectives` - Manage objectives (GET, POST, PUT, DELETE)
+- `/api/departments` - Manage departments (GET, POST, PUT, DELETE)
+- `/api/reports` - Generate and retrieve reports (GET, POST)
+- `/api/users` - Manage users (GET, POST, PUT, DELETE)
+- `/api/user-departments` - Manage user-department relationships (GET, POST, PUT, DELETE)
 
 ## Contribution
 

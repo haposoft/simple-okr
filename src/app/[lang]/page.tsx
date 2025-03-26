@@ -1,6 +1,7 @@
 import { getDictionary } from '@/lib/dictionary';
 import { getServerSession } from 'next-auth';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 
 export default async function Home({
   params,
@@ -9,6 +10,11 @@ export default async function Home({
 }) {
   const dict = await getDictionary(params.lang);
   const session = await getServerSession();
+
+  // Nếu đã đăng nhập, chuyển hướng đến trang reports
+  if (session) {
+    redirect(`/${params.lang}/reports`);
+  }
 
   return (
     <div className="space-y-8" suppressHydrationWarning>
@@ -20,19 +26,17 @@ export default async function Home({
           {dict.home.description}
         </p>
         
-        {!session && (
-          <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8" suppressHydrationWarning>
-            <div className="rounded-md shadow" suppressHydrationWarning>
-              <Link
-                href={`/${params.lang}/auth/signin`}
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
-                suppressHydrationWarning
-              >
-                {dict.auth.startNow}
-              </Link>
-            </div>
+        <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8" suppressHydrationWarning>
+          <div className="rounded-md shadow" suppressHydrationWarning>
+            <Link
+              href={`/${params.lang}/auth/signin`}
+              className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
+              suppressHydrationWarning
+            >
+              {dict.auth.startNow}
+            </Link>
           </div>
-        )}
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6" suppressHydrationWarning>

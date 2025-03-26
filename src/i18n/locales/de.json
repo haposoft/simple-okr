@@ -21,7 +21,7 @@
     "edit": "Bearbeiten",
     "create": "Erstellen",
     "search": "Suchen",
-    "filter": "Filter"
+    "filter": "Filtern"
   },
   "auth": {
     "login": "Anmelden",
@@ -42,7 +42,22 @@
     "settings": "Einstellungen"
   },
   "objectives": {
-    "title": "Ziele",
+    "title": "Zielverwaltung",
+    "addNew": "Neues Ziel hinzufügen",
+    "searchPlaceholder": "Ziele suchen...",
+    "filterAllTypes": "Alle Typen",
+    "typeCompany": "Unternehmen",
+    "typeDepartment": "Abteilung",
+    "typePersonal": "Persönlich",
+    "filterAllStatuses": "Alle Status",
+    "statusDraft": "Entwurf",
+    "statusActive": "Aktiv",
+    "statusCompleted": "Abgeschlossen",
+    "addFormTitle": "Neues Ziel hinzufügen",
+    "formTitle": "Titel",
+    "formDescription": "Beschreibung",
+    "formStartDate": "Startdatum",
+    "formEndDate": "Enddatum",
     "createNew": "Neues Ziel erstellen",
     "editObjective": "Ziel bearbeiten",
     "deleteObjective": "Ziel löschen",

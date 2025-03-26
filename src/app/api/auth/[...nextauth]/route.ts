@@ -19,6 +19,16 @@ const handler = NextAuth({
   pages: {
     signIn: "/auth/signin",
   },
+  callbacks: {
+    async redirect({ url, baseUrl }) {
+      // Kiểm tra nếu URL là URL đăng nhập hoặc trang chủ, chuyển hướng đến trang reports
+      if (url === baseUrl || url.startsWith(`${baseUrl}/`)) {
+        const locale = url.split('/')[3] || 'en'; // Lấy locale từ URL
+        return `${baseUrl}/${locale}/reports`;
+      }
+      return url;
+    },
+  },
 });
 
 export { handler as GET, handler as POST }; 
